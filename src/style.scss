@@ -1,0 +1,72 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: 70px 70px 70px 70px;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-areas: 
+                       "display display display"
+                       "q w e"
+                       "a s d"
+                       "z x c";
+  margin: auto;
+  width: 210px;
+  height: 280px;
+  align-items: center;
+  justify-items: center;
+  background-color: #F283B6;
+  outline: none;
+  
+  .display {
+    grid-area: display;
+    width: 170px;
+    height: 50px;
+    background-color: #00D7BD;
+    text-align: center;
+    span {
+      position: relative;
+      top: 15px;
+    }
+  }
+  
+  .drum-button {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #EDBFB7;
+    span {
+      position: relative;
+      top: 17px;
+    }
+  }
+  
+  #q {
+    grid-area: q;
+  }
+  #w {
+    grid-area: w;
+  }
+  #e {
+    grid-area: e;
+  }
+  #a {
+    grid-area: a;
+  }
+  #s {
+    grid-area: s;
+  }
+  #d {
+    grid-area: d;
+  }
+  #z {
+    grid-area: z;
+  }
+  #x {
+    grid-area: x;
+  }
+  #c {
+    grid-area: c;
+  }
+}
+
+.wrapper:focus {
+  background-color: #E06C9F;
+}

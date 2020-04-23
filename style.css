@@ -1,0 +1,65 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: 70px 70px 70px 70px;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-areas: "display display display" "q w e" "a s d" "z x c";
+  margin: auto;
+  width: 210px;
+  height: 280px;
+  align-items: center;
+  justify-items: center;
+  background-color: #F283B6;
+  outline: none;
+}
+.wrapper .display {
+  grid-area: display;
+  width: 170px;
+  height: 50px;
+  background-color: #00D7BD;
+  text-align: center;
+}
+.wrapper .display span {
+  position: relative;
+  top: 15px;
+}
+.wrapper .drum-button {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #EDBFB7;
+}
+.wrapper .drum-button span {
+  position: relative;
+  top: 17px;
+}
+.wrapper #q {
+  grid-area: q;
+}
+.wrapper #w {
+  grid-area: w;
+}
+.wrapper #e {
+  grid-area: e;
+}
+.wrapper #a {
+  grid-area: a;
+}
+.wrapper #s {
+  grid-area: s;
+}
+.wrapper #d {
+  grid-area: d;
+}
+.wrapper #z {
+  grid-area: z;
+}
+.wrapper #x {
+  grid-area: x;
+}
+.wrapper #c {
+  grid-area: c;
+}
+
+.wrapper:focus {
+  background-color: #E06C9F;
+}
